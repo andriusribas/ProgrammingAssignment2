@@ -34,8 +34,8 @@ cacheSolve <- function(x, ...) {
     # otherwise, we calculate it
     data <- x$get()
     
-    # see ?solve, it returns the inverse of matrix a, if a second parameter is missing
-    inverse <- solve(A)
+    # see ?solve, it returns the inverse of matrix data, if a second parameter is missing
+    inverse <- solve(data)
     
     # update the cache
     x$setInverse(inverse)
